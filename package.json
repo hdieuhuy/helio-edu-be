@@ -1,0 +1,32 @@
+{
+  "name": "back-end",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "airbnb": "^0.0.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.0",
+    "eslint": "8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.2",
+    "morgan": "~1.9.1",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react-hooks": "4.3.0"
+  }
+}
