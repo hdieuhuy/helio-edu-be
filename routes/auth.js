@@ -20,7 +20,7 @@ router.post('/signup', async (req, res) => {
     return res.status(422).json({
       signUp: {
         status: 'ERROR',
-        message: 'Lỗi xử lý trên server',
+        message: 'Trường thông tin: email, mật khẩu bị sai',
         data: {},
       },
     });
@@ -53,7 +53,7 @@ router.post('/signup', async (req, res) => {
     return res.json({
       signUp: {
         status: 'OK',
-        error: '',
+        message: '',
         data: newUser,
       },
     });
@@ -80,7 +80,7 @@ router.post('/signin', async (req, res) => {
   if (!user) {
     return res.status(422).json({
       signIn: {
-        STATUS: 'ERROR',
+        status: 'ERROR',
         message: 'Email hoặc mật khẩu không đúng',
         data: {},
       },
@@ -90,7 +90,7 @@ router.post('/signin', async (req, res) => {
   if (!checkPassword) {
     return res.status(422).json({
       signIn: {
-        STATUS: 'ERROR',
+        status: 'ERROR',
         message: 'Mẩu khẩu không đúng',
         data: {},
       },

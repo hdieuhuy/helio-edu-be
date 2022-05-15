@@ -19,7 +19,7 @@ const sendConfirmationEmail = (email, hash) => {
       html: `
         <h3> Xin chào ${email} </h3>
         <p>Chào mừng bạn vào hệ thống của HelioEducation</p>
-        <p><a target="_" href="${process.env.DOMAIN}/activate/user/${hash}">Active link</a></p>
+        <p><a target="_" href="${process.env.DOMAIN}/verify/${hash}">Active link</a></p>
         <p>HelioEducation Team</p>
       `,
     };
