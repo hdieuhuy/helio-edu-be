@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "airbnb": "^0.0.2",
